@@ -1,22 +1,23 @@
-#Exercícios iniciais para uso do R!
-#Exercício disponível no site:http://www.mensuracaoflorestal.com.br/sobre-o-r
+#ExercÃ­cios iniciais para uso do R!
+#ExercÃ­cio disponÃ­vel no site:http://www.mensuracaoflorestal.com.br/sobre-o-r
 
 #Ler arquivos em excel
 require(xlsx)
 exemplo <- read.xlsx("c:/users/KLDB00132941/Documents/Pessoal/r_script/dados.xlsx",sheetName = "Plan1")
 
-#imprimir nome variáveis:
+#imprimir nome variÃ¡veis:
 names(exemplo)
 
 #Print dos primeiros 5 resultados
 exemplo[1:5,]
+head(exemplo)
 
 #reconhecer como objeto isolado cada coluna de um Data frame
 attach(exemplo)
 
-#Calcular estatisticas básicas para variáveis do arquivo:
+#Calcular estatisticas bÃ¡sicas para variÃ¡veis do arquivo:
 require(fBasics)
 basicStats(exemplo)
 
-#Elaborar gráfico de distribuição de Y em relação à X
-plot(x,y,xlab="Variável independente (X)",ylab="Variável dependente (Y)")
+#Elaborar grÃ¡fico de distribuiÃ§Ã£o de Y em relaÃ§Ã£o Ã  X
+plot(x,y,xlab="VariÃ¡vel independente (X)",ylab="VariÃ¡vel dependente (Y)")
